@@ -1,0 +1,458 @@
+/*@import url(http://weloveiconfonts.com/api/?family=fontawesome);*/
+
+body{
+	margin:0;
+	letter-spacing:1px;
+	background-color: #ccc;
+}
+ul{
+	padding:0;
+	margin:0;
+}
+li{
+	list-style:none;
+	text-align: center;
+}
+a{
+	 text-decoration:none;
+}
+a:hover{
+	text-decoration: none;
+}
+
+#loadDiv{
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    position: absolute;
+    background-size:cover;
+    background-color: #000; 
+}
+
+.fly{
+   list-style: none;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.fly li{
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: Open Sans, Arial;
+	display: inline-block;
+	margin-right: 45px;
+	opacity: 1;
+	-moz-transition: all 2.5s ease;
+	transition: all 2.5s ease;
+}
+
+.fly.disapper li{
+	opacity: 0;
+}
+
+.fly.disapper li:last-child{
+	margin-right: 0px;
+}
+.fly.disapper li:nth-child(1){ transform: translateX(-200px) translateY(-200px); }
+.fly.disapper li:nth-child(2){ transform: translateX(20px) translateY(100px); }
+.fly.disapper li:nth-child(3){ transform: translateX(-150px) translateY(-80px); }
+.fly.disapper li:nth-child(4){ transform: translateX(10px) translateY(-200px); }
+.fly.disapper li:nth-child(5){ transform: translateX(-300px) translateY(200px); }
+.fly.disapper li:nth-child(6){ transform: translateX(20px) translateY(-20px); }
+.fly.disapper li:nth-child(7){ transform: translateX(30px) translateY(200px); }
+
+.fa {
+ width: 60px;
+ display: block;
+ text-align: center;
+ color:white;
+ font:normal 45px 'FontAwesome';
+ line-height:60px;
+ text-rendering: auto;
+ -webkit-font-smoothing: antialiased;
+}
+.fa-angle-double-down:before {content: "\f103";}
+ 
+.bounce {
+ position: absolute;
+ bottom: 30px;
+ left: 50% ;
+ width: 60px;
+ height: 60px ;
+ margin-left:-30px;
+ border: 2px solid white;
+ -webkit-border-radius:50%;
+ -moz-border-radius:50%;
+ -ms-border-radius:50%;
+ border-radius:50%;
+ animation: bounce 2s infinite;
+ -webkit-animation: bounce 2s infinite;
+ -moz-animation: bounce 2s infinite;
+ -o-animation: bounce 2s infinite;
+}
+ 
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);} 
+ 40% {-webkit-transform: translateY(-30px);}
+ 60% {-webkit-transform: translateY(-15px);}
+}
+ 
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-30px);}
+ 60% {-moz-transform: translateY(-15px);}
+}
+ 
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-30px);}
+ 60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-30px);}
+ 60% {transform: translateY(-15px);}
+}
+.container-fluid{
+	background-color:#aaa;
+}
+
+.navbar-brand{
+	color:#000 !important;
+	font-weight:bold;
+	font-size:15px;
+}
+.navbar{
+	border: 0px !important;
+}
+
+#menulist a{
+	color:#000;
+	font-weight:bold;
+}
+
+#menulist li a{
+	display:block;
+	padding:15px;
+	font-size:15px;
+}
+
+#menulist li a:hover{
+	background-color:#ddd;
+	text-decoration: none;
+}
+
+#content .content-home{
+	background: url("../images/desktop.JPG") no-repeat center center fixed;
+	height:760px;
+	background-size: cover;
+	padding:120px 40px;
+	opacity:0.8;
+	margin-top:50px;
+}
+
+#content .content-home hgroup h1{
+	color:#eee;
+	font-size: 64px;
+	font-weight: bold;
+	text-shadow:2px 2px #000;
+}
+#content .content-home hgroup h2{
+	color:#111;
+	font-size: 24px;
+	font-weight: bold;
+	text-shadow:1px 1px #111;
+}
+#content .content-home hgroup hr{
+	border:none;
+	height:2px;
+	background-color: #ccc;
+	box-shadow: 1px 1px 2px #000;
+}
+
+#content .content-about{
+	background: url("../images/tree.jpg") no-repeat center center fixed;
+	background-size: cover;
+	padding:80px 30px;
+	opacity: 0.8;
+	text-align: center;
+}
+#content .content-about h3{
+	color:#000;
+	font-size: 40px;
+	font-weight: bold;
+}
+#content .content-about p{
+	color:#000;
+	font-size: 22px;
+	letter-spacing: 0px;
+}
+#content .content-about p a{
+	color:#fff;
+}
+#content .content-about p a:hover{
+	text-decoration: underline;
+	color:#0000ff;
+}
+
+#aboutDiv{
+	background-color: white;
+	border-radius: 15px;
+	opacity: 0.6;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#dlbtn{
+	margin-bottom: 15px;
+	font-size: 20px;
+	border-radius: 20px;
+}
+
+#content .content-skills{
+	background: url("../images/sea.jpg") no-repeat center center fixed;
+	background-size: cover;
+	padding:80px 30px;
+	opacity: 0.7;
+}
+
+#skillsDiv{
+	background-color: white;
+	border-radius: 15px;
+	opacity: 0.6;
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+#content .content-skills h3{
+	color:#000;
+	font-size: 40px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.labels{
+	font-size: 20px;
+	color: #000;
+	font-weight: bold;
+}
+
+#html{
+	animation-name:htmlprogressbar;
+	animation-duration: 2s;
+}
+@keyframes htmlprogressbar{
+	from{width: 0%;}
+	to{width: 95%;}
+}
+@-webkit-keyframes htmlprogressbar{
+	from{width: 0%;}
+	to{width: 95%;}
+}
+#css{
+	animation-name:cssprogressbar;
+	animation-duration: 2s;
+}
+@keyframes cssprogressbar{
+	from{width: 0%;}
+	to{width: 90%;}
+}
+@-webkit-keyframes cssprogressbar{
+	from{width: 0%;}
+	to{width: 90%;}
+}
+#javascript{
+	animation-name:javascriptprogressbar;
+	animation-duration: 2s;
+}
+@keyframes javascriptprogressbar{
+	from{width: 0%;}
+	to{width: 90%;}
+}
+@-webkit-keyframes javascriptprogressbar{
+	from{width: 0%;}
+	to{width: 90%;}
+}
+#jquery{
+	animation-name:jqueryprogressbar;
+	animation-duration: 2s;
+}
+@keyframes jqueryprogressbar{
+	from{width: 0%;}
+	to{width: 85%;}
+}
+@-webkit-keyframes jqueryprogressbar{
+	from{width: 0%;}
+	to{width: 85%;}
+}
+#bootstrap{
+	animation-name:bootstrapprogressbar;
+	animation-duration: 2s;
+}
+@keyframes bootstrapprogressbar{
+	from{width: 0%;}
+	to{width: 87%;}
+}
+@-webkit-keyframes bootstrapprogressbar{
+	from{width: 0%;}
+	to{width: 87%;}
+}
+#angularjs{
+	animation-name:angularjsprogressbar;
+	animation-duration: 2s;
+}
+@keyframes angularjsprogressbar{
+	from{width: 0%;}
+	to{width: 85%;}
+}
+@-webkit-keyframes angularjsprogressbar{
+	from{width: 0%;}
+	to{width: 85%;}
+}
+#nodejs{
+	animation-name:nodejsprogressbar;
+	animation-duration: 2s;
+}
+@keyframes nodejsprogressbar{
+	from{width: 0%;}
+	to{width: 70%;}
+}
+@-webkit-keyframes nodejsprogressbar{
+	from{width: 0%;}
+	to{width: 70%;}
+}
+#java{
+	animation-name:javaprogressbar;
+	animation-duration: 2s;
+}
+@keyframes javaprogressbar{
+	from{width: 0%;}
+	to{width: 80%;}
+}
+@-webkit-keyframes javaprogressbar{
+	from{width: 0%;}
+	to{width: 80%;}
+}
+#database{
+	animation-name:databaseprogressbar;
+	animation-duration: 2s;
+}
+@keyframes databaseprogressbar{
+	from{width: 0%;}
+	to{width: 85%;}
+}
+@-webkit-keyframes databaseprogressbar{
+	from{width: 0%;}
+	to{width: 85%;}
+}
+
+#content .content-portfolio{
+	background: url("../images/chair.jpg") no-repeat center center fixed;
+	background-size: cover;
+	padding:60px 20px;
+	opacity: 0.7;
+}
+
+figure {
+    height: 15em;
+    margin: 5em;
+    width: 20em;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+figure:hover {
+    -webkit-transform: rotateX(90deg) translateY(-2em) translateZ(3em);
+    -moz-transform: rotateX(90deg) translateY(-2em) translateZ(3em);
+    transform: rotateX(90deg) translateY(-2em) translateZ(3em);
+}
+img {
+    background-color: #222;
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+    display: block;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+figure:hover img {
+    box-shadow: none;
+}
+figcaption {
+    background-color: #222;
+    color: #fff;
+    padding: .5em;
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: 100% 0;
+    -webkit-transition: .5s;
+}
+figure:hover figcaption {
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+}
+
+#content .content-portfolio hgroup{
+	letter-spacing: 0px;
+}
+#content .content-portfolio h1{
+	font-size:42px;
+	font-weight:bold;
+	color:white;
+}
+#content .content-portfolio h2{
+	font-size:22px;
+	font-weight:bold;
+	color:white;
+}
+
+.project {
+	padding: 25px;
+	text-align: center;
+}
+
+#content .content-contact{
+	background-color: #E5E7E9;
+	background-size: cover;
+	opacity:0.8;
+	letter-spacing: 0px;
+	padding:80px 40px;
+}
+
+#content .content-contact h1{
+	font-size: 40px;
+	font-weight:bold;
+	color:#000;
+}
+
+.title{
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#footer{
+	padding:50px 30px;
+	letter-spacing: 0px;
+	background-color: #aaa;
+}
+#footer li{
+	display: inline-block;
+	font-size: 18px;
+	font-weight:bold;
+}
+#footer li.li-divide-dot{
+	margin:0 10px;
+}
+#footer li a:hover{
+	text-decoration:underline;
+}
+#footer p{
+	margin-top:15px;
+	font-size: 12px;
+	font-weight:bold;
+	color:#2E4053;
+}
